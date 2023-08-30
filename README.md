@@ -1,6 +1,6 @@
 # Corn API
 
-Small API for parsing [Corn](https://github.com/jakestanger.corn) as a service.
+Small API for parsing [Corn](https://github.com/jakestanger/corn) as a service.
 
 Send requests on `/parse`. The request body should be fully formed Corn.
 Request responses will be the parsed output. 
