@@ -31,9 +31,9 @@ async fn parse(req: HttpRequest, body: String) -> impl Responder {
 
 fn get_value_string(value: &Value, ty: &str) -> Result<String, SerializerError> {
     match ty {
-        "application/toml" => toml::to_string(value).map_err(SerializerError::from),
+        "application/toml" => toml::to_string_pretty(value).map_err(SerializerError::from),
         "application/yaml" => serde_yaml::to_string(value).map_err(SerializerError::from),
-        _ => serde_json::to_string(value).map_err(SerializerError::from),
+        _ => serde_json::to_string_pretty(value).map_err(SerializerError::from),
     }
 }
 
