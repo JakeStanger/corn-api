@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-libcorn = "0.9.0"
+libcorn = "0.9.1"
 actix-web = "4.3.1"
 actix-extensible-rate-limit = "0.2.1"
 
