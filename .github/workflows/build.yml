@@ -43,8 +43,5 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         name: Cache dependencies
 
-      - name: Install build deps
-        run: ./.github/scripts/ubuntu_setup.sh
-
       - name: Build
         run: cargo build --verbose
