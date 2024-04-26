@@ -5,6 +5,7 @@ WORKDIR /app
 COPY . .
 
 RUN cargo install --path .
+RUN rm -rf /app
 
 ENV HOST=0.0.0.0
 ENV PORT=5050
